@@ -78,6 +78,8 @@ main {
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
+        visibility: hidden;
+
     }
 
     .nav-list li {
@@ -92,6 +94,7 @@ main {
 
 .nav-list.active {
     transform: translateX(0);
+    visibility: visible;
 }
 @keyframes navLinkFade {
     from {
